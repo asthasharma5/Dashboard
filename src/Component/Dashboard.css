@@ -1,0 +1,47 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dashboard {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #ffcc00;
+  }
+  
+  .charts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .chart {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    height: 250px; /* Ensure uniform height for all charts */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .chart h2 {
+    color: #ffcc00;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .chart canvas {
+    height: 175px !important; /* Forces all charts to match height */
+    width: 100% !important;
+  }
+  
